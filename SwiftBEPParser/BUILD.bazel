@@ -18,6 +18,7 @@ swift_library(
     name = "SwiftBEPParser",
     srcs = glob(["Sources/**"]),
     module_name = "SwiftBEPParser",
+    visibility = ["//visibility:public"],
     deps = [
         "//BuildEventProtocol:build_event_stream_proto_swift",
     ],
