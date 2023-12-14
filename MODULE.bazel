@@ -27,6 +27,10 @@ bazel_dep(
     version = "3.1.1",
     repo_name = "build_bazel_rules_apple",
 )
+bazel_dep(
+    name = "rules_xcodeproj",
+    version = "1.13.0",
+)
 
 ##################################################################################################
 #  The following deps are required to support the io_bazel dependency.
@@ -67,11 +71,6 @@ bazel_dep(
 
 # - Development Deps
 
-bazel_dep(
-    name = "rules_xcodeproj",
-    version = "1.13.0",
-    dev_dependency = True,
-)
 bazel_dep(
     name = "buildifier_prebuilt",
     version = "6.0.0.1",
